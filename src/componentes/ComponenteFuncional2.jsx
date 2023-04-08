@@ -1,4 +1,4 @@
-
+import Pais from './Pais'
 
 const ComponenteFuncional2 = ({prop1, nombre, paises}) => {
   return (
@@ -28,15 +28,9 @@ const ComponenteFuncional2 = ({prop1, nombre, paises}) => {
           </tr>
         </thead>
         <tbody>
-          {paises.map((pais) => (
-            <>
-           <tr key={pais.id}>
-           <td>{pais.id}</td>
-            <td>{pais.nombre}</td>
-            <td>{pais.dominio}</td>
-           </tr>
-           </>
-          ))}
+          {paises.map((pais) => ( 
+            <Pais key={pais.id} pais={pais}></Pais>
+           ))}
         </tbody>
       </table>
     </div>
