@@ -10,3 +10,13 @@ export const formatearFecha=(fecha) =>
     return fechaNueva.toLocaleDateString('es-ES', opciones);
 
 }
+
+export const formatearNumero = (numero) => 
+{
+    return new Intl.NumberFormat().format(numero);
+}
+
+export const acortarTexto = (valor, desde, hasta) => 
+{
+    return valor.substring(desde, hasta)
+}
