@@ -1,4 +1,5 @@
 import ComponenteFuncional2 from "./ComponenteFuncional2"
+import Numero from './Numero';
 
 const ComponenteFuncional = () => {
     let nombre= "Jose Cerda";
@@ -59,6 +60,12 @@ const ComponenteFuncional = () => {
     <div>
        <h1>Hola desde Componente funcional    </h1> 
        <ComponenteFuncional2 prop1="manzana" nombre={nombre} paises={paises} />
+       <hr />
+       {(numero==12) ? (
+            <Numero numero={numero} />
+        ) : (
+            <div>No es 12</div>
+        ) }
     </div>
   )
 }
