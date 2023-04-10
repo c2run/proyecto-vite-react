@@ -7,6 +7,7 @@ import Home from './paginas/Home'
 import SobreNosotros from './paginas/SobreNosotros'
 import Error404 from './paginas/Error404'
 import Frontend from './componentes/Frontend'
+import Rutas from './paginas/Rutas'
 
 const router = createBrowserRouter
 (
@@ -27,6 +28,10 @@ const router = createBrowserRouter
         {
           path: '*',
           element: <Error404 />
+        },
+        {
+          path: '/rutas',
+          element: <Rutas />
         }
 
       ]
