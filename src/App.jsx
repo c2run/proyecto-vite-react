@@ -2,7 +2,7 @@ import Parser from "html-react-parser";
 import Basicos from "./componentes/Basicos";
 import ComponenteDeClase from "./componentes/ComponenteDeClase";
 import ComponenteFuncional from "./componentes/ComponenteFuncional";
-import StyleComponent from "./componentes/StyleComponent";
+import StyleComponent, { Caja } from "./componentes/StyleComponent";
 
 
 
@@ -13,6 +13,9 @@ function App() {
   <div>
    <h1>Hola</h1>
    <StyleComponent></StyleComponent>
+   <hr />
+    
+   <hr />
     <ComponenteFuncional></ComponenteFuncional>
    <Basicos></Basicos>
    <ComponenteDeClase></ComponenteDeClase>

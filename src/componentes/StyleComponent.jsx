@@ -16,11 +16,21 @@ export const Circulo = styled.div`
   border-radius: 50%;
 `;
 
+  export const Caja = styled.input`
+  padding: 0.5em;
+  margin: 0.5;
+  background: papayawhip;
+  border: none;
+  border-radius: 3px;
+  color: ${props => props.color_custom || "green"}
+  `;
+
 const StyleComponent = () => {
   return (
     <>
         <Titulo>Style component renovado</Titulo>
         <Circulo>Círculo</Circulo>
+        <Caja type="text" defaultValue="@jose" placeholder="Texto" color_custom="red"></Caja>
     </>
   )
 }
