@@ -8,6 +8,7 @@ import SobreNosotros from './paginas/SobreNosotros'
 import Error404 from './paginas/Error404'
 import Frontend from './componentes/Frontend'
 import Rutas from './paginas/Rutas'
+import RutasPath from './paginas/RutasPath'
 
 const router = createBrowserRouter
 (
@@ -32,6 +33,10 @@ const router = createBrowserRouter
         {
           path: '/rutas',
           element: <Rutas />
+        },
+        {
+          path: '/rutas/path/:id/:slug',
+          element: <RutasPath />
         }
 
       ]
