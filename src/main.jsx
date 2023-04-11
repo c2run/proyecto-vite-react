@@ -12,6 +12,7 @@ import RutasPath from './paginas/RutasPath'
 import RutasQueryString from './paginas/RutasQueryString'
 import ErrorPersonalizado from './paginas/ErrorPersonalizado'
 
+
 const router = createBrowserRouter
 (
   [
@@ -40,6 +41,10 @@ const router = createBrowserRouter
           path: '/rutas/query-string',
           element: <RutasQueryString />,
           errorElement: <ErrorPersonalizado />
+        },
+        {
+          path: '*',
+          element: <Error404 />
         }
 
       ]
