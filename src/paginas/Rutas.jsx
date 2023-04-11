@@ -17,6 +17,9 @@ const Rutas = () => {
             <li>
                 <Link to={`/rutas/path/${id}/${slug}`}>Parametros path dinámicos</Link>
             </li>
+            <li>
+                <Link to={`/rutas/query-string?id=${id}&slug=${slug}`}> Ruta Query String</Link>
+            </li>
         </ul>
     </>
   )

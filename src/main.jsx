@@ -9,6 +9,7 @@ import Error404 from './paginas/Error404'
 import Frontend from './componentes/Frontend'
 import Rutas from './paginas/Rutas'
 import RutasPath from './paginas/RutasPath'
+import RutasQueryString from './paginas/RutasQueryString'
 
 const router = createBrowserRouter
 (
@@ -37,6 +38,10 @@ const router = createBrowserRouter
         {
           path: '/rutas/path/:id/:slug',
           element: <RutasPath />
+        },
+        {
+          path: '/rutas/query-string',
+          element: <RutasQueryString />
         }
 
       ]
