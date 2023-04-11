@@ -30,12 +30,21 @@ const Header = () => {
             <Link className="p-2 link-secondary" to="/" title='Inicio'>
               Home
             </Link>
+            <Link className="p-2 link-secondary" to="/basicos" title='Rutas'>
+              Básicos
+            </Link>
+
             <Link className="p-2 link-secondary" to="/" title='Formularios'>
               Formularios
             </Link>
             <Link className="p-2 link-secondary" to="/rutas" title='Rutas'>
               Rutas
             </Link>
+
+            <Link className="p-2 link-secondary" to="/styled-component" title='Rutas'>
+              Styled Component
+            </Link>
+
           </nav>
         </div>
       </div>
