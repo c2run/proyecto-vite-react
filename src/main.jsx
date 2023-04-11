@@ -1,7 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-// import './index.css'
+import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './../public/css/blog.css'
+
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './paginas/Home'
 import SobreNosotros from './paginas/SobreNosotros'
