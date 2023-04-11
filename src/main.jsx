@@ -10,6 +10,7 @@ import Frontend from './componentes/Frontend'
 import Rutas from './paginas/Rutas'
 import RutasPath from './paginas/RutasPath'
 import RutasQueryString from './paginas/RutasQueryString'
+import ErrorPersonalizado from './paginas/ErrorPersonalizado'
 
 const router = createBrowserRouter
 (
@@ -28,10 +29,6 @@ const router = createBrowserRouter
           element: <SobreNosotros />
         },
         {
-          path: '*',
-          element: <Error404 />
-        },
-        {
           path: '/rutas',
           element: <Rutas />
         },
@@ -41,7 +38,8 @@ const router = createBrowserRouter
         },
         {
           path: '/rutas/query-string',
-          element: <RutasQueryString />
+          element: <RutasQueryString />,
+          errorElement: <ErrorPersonalizado />
         }
 
       ]
