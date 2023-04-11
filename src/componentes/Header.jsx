@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 const Header = () => {
   return (
     <>
-      <div className="container">
+        <div className='container'>
         <header className="blog-header lh-1 py-3">
           <div className="row flex-nowrap justify-content-between align-items-center">
             <div className="col-4 pt-1">
@@ -41,13 +42,13 @@ const Header = () => {
               Rutas
             </Link>
 
-            <Link className="p-2 link-secondary" to="/styled-component" title='Rutas'>
+            <Link className="p-2 link-secondary" to="/styled-component" title='Styled Component'>
               Styled Component
             </Link>
 
           </nav>
         </div>
-      </div>
+        </div>
     </>
   );
 }
