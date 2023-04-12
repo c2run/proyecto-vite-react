@@ -20,6 +20,9 @@ const Hooks = () => {
             <li>
                 <Link to="/hooks/use-effect">use Effect</Link>
             </li>
+            <li>
+                <Link to="/hooks/custom-hook">Custom Hook</Link>
+            </li>
         </ul>
     </>
   )
