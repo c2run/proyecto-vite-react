@@ -20,6 +20,8 @@ import HooksEventoOnChange from './paginas/HooksEventoOnChange';
 import HooksEventosVarios from './paginas/HooksEventosVarios';
 import HooksUseEffect from './paginas/HooksUseEffect';
 import HooksCustom from './paginas/HooksCustom';
+import HooksuseLoaderData, {loader as paisesLoader} from './paginas/HooksuseLoaderData';
+import { paises } from './datos/datos';
 
 const router = createBrowserRouter
 (
@@ -81,6 +83,11 @@ const router = createBrowserRouter
         {
           path: '/hooks/custom-hook',
           element: <HooksCustom />
+        },
+        {
+          path: '/hooks/useloaderdata',
+          element: <HooksuseLoaderData />,
+          loader: paisesLoader
         }
 
       ]

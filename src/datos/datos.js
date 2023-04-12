@@ -65,5 +65,59 @@ const productos = [{
 }
 ];
 
+const paises = [
+    {
+      id: 1,
+      nombre: "Chile",
+      dominio: "cl",
+    },
+    {
+      id: 2,
+      nombre: "Perú",
+      dominio: "pe",
+    },
+    {
+      id: 3,
+      nombre: "Bolivia",
+      dominio: "bo",
+    },
+    {
+      id: 4,
+      nombre: "Argentina",
+      dominio: "ar",
+    },
+    {
+      id: 5,
+      nombre: "Venezuela",
+      dominio: "vl",
+    },
+    {
+      id: 6,
+      nombre: "Colombia",
+      dominio: "co",
+    },
+    {
+      id: 7,
+      nombre: "Panamá",
+      dominio: "pn",
+    },
+    {
+      id: 8,
+      nombre: "Brasil",
+      dominio: "br",
+    },
+    {
+      id: 9,
+      nombre: "Paraguay",
+      dominio: "pr",
+    },
+    {
+      id: 10,
+      nombre: "Uruguay",
+      dominio: "ur",
+    },
+  ];
+
 export { productos }
 export {categorias }
+export { paises }
