@@ -46,6 +46,10 @@ const Header = () => {
               Styled Component
             </Link>
 
+            <Link className="p-2 link-secondary" to="/hooks" title='Styled Component'>
+             Hooks
+            </Link>
+
           </nav>
         </div>
         </div>

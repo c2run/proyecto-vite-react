@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
   return (
    <>
-    <h1>React Router Dom</h1>
+    <h1>Mi página web!</h1>
    </>
   )
 }

@@ -4,7 +4,6 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './paginas/Home'
 import SobreNosotros from './paginas/SobreNosotros'
@@ -14,7 +13,9 @@ import Rutas from './paginas/Rutas'
 import RutasPath from './paginas/RutasPath'
 import RutasQueryString from './paginas/RutasQueryString'
 import ErrorPersonalizado from './paginas/ErrorPersonalizado'
-
+import Hooks from './paginas/Hooks';
+import HooksEventoClick from './paginas/HooksEventoClick';
+import HooksUseState from './paginas/HooksUseState';
 
 const router = createBrowserRouter
 (
@@ -48,6 +49,18 @@ const router = createBrowserRouter
         {
           path: '*',
           element: <Error404 />
+        },
+        {
+          path: '/hooks',
+          element: <Hooks />
+        },
+        {
+          path: '/hooks/evento/click',
+          element: <HooksEventoClick />
+        },
+        {
+          path: '/hooks/usestate',
+          element: <HooksUseState />
         }
 
       ]
