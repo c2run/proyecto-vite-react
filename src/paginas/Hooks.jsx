@@ -11,6 +11,9 @@ const Hooks = () => {
             <li>
                 <Link to="/hooks/usestate">useState</Link>
             </li>
+            <li>
+                <Link to="/hooks/onchange">onChange</Link>
+            </li>
         </ul>
     </>
   )
