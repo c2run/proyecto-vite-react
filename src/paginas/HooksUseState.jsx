@@ -6,11 +6,18 @@ const HooksUseState = () => {
     //forma de declarar un state inicializado en cero en este caso
     const [contador,setContador] = useState(0);
 
+    //state de estado online
+    const [conectado, setConectado] = useState("conectado");
+
     const handleIncrementar = () => {
-
         setContador(contador+1);
-
     }
+    const handleDecremento = () => {
+        if(contador != 0){
+            setContador(contador-1);
+        }
+    }
+   
 
 
   return (
@@ -30,7 +37,11 @@ const HooksUseState = () => {
 
       <button className="btn btn-info" onClick={handleIncrementar}><i class="fa-solid fa-plus"></i>Incrementar</button>
       <hr />
+      <button className="btn btn-info" onClick={handleDecremento}><i class="fa-solid fa-plus"></i>Decremento</button>
+      <hr />
       <p>Contador: {contador}</p>
+      <hr />
+
     </>
   )
 }
