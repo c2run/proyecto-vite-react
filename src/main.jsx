@@ -29,6 +29,7 @@ import HooksUseRef from './paginas/HooksUseRef';
 import Basicos from './paginas/Basicos';
 import Formularios from './paginas/Formularios';
 import FormularioSimple from './paginas/FormularioSimple';
+import FormularioUseActionData , {action as procesarFormularioActionDate} from './paginas/FormularioUseActionData';
 
 const router = createBrowserRouter
 (
@@ -57,6 +58,11 @@ const router = createBrowserRouter
         {
           path: '/formulario-simple',
           element: <FormularioSimple />
+        },
+        {
+          path: '/formulario/useactiondata',
+          element: <FormularioUseActionData />,
+          action: procesarFormularioActionDate
         },
         
         {

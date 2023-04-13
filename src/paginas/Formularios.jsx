@@ -10,6 +10,9 @@ const Formularios = () => {
             <li>
                 <Link to='/formulario-simple'>Formulario simple</Link>
             </li>
+            <li>
+                <Link to='/formulario/useactiondata'>Formulario useActionData</Link>
+            </li>
         </ul>
 
     </div>
