@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, Form } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import { atributos, categorias_productos } from '../datos/datos';
+import { useState } from 'react';
 
 export async function action({request}){
     //se reciben los datos del formulario
@@ -15,11 +16,20 @@ export async function action({request}){
         icon: 'success',
         title: 'OK',
         text: `El nombre es ${formData.get('nombre')} | Nombre: ${datos.nombre}  CAT: ${datos.categoria}  | Precio: ${formData.get('precio')}
-        | Destacado: ${datos.destacado} | Descripción: ${formData.get('descripcion')} `
+        | Destacado: ${datos.destacado} | Descripción: ${formData.get('descripcion')} | ${datos.peligroso} `
     });
 }
 
 const FormularioUseActionData = () => {
+
+    //componente para checkbox
+    const[peligroso, setPeligroso] = useState(false);
+    //función para setear el estado de la constante peligroso
+
+    const manejarPeligroso = () => {
+        setPeligroso(!peligroso);
+    }
+
   return (
    <>
     <nav aria-label="breadcrumb">
@@ -73,7 +83,14 @@ const FormularioUseActionData = () => {
         <label htmlFor='nombre'>Descripción</label>
         <textarea className='form-control' name='descripcion' id='descripcion' placeholder='Descripción'></textarea>
         </div>
+            <hr />
 
+            <div className='form-group'>
+            <label htmlFor="peligroso">Peligroso</label>
+            <div className='form-check'>
+                <input type='checkbox' className='form-check-input' id='peligroso' name='peligroso' value={peligroso} onChange={manejarPeligroso} />
+            </div>
+            </div>
             <hr />
         <button className='btn btn-warning'>Enviar</button>
       </Form>
