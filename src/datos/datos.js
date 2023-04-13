@@ -118,6 +118,54 @@ const paises = [
     },
   ];
 
+  const categorias_productos = [
+    {
+    id:1,
+    nombre: 'Abarrotes'
+    },
+    {
+      id:2,
+      nombre: 'Lácteos'
+    },
+    {
+      id:3,
+      nombre: 'Carnes'
+    },
+    {
+      id:4,
+      nombre: 'Licores'
+    },
+    {
+      id:5,
+      nombre: 'Perfumería'
+    }
+];
+
+  const atributos = [
+    {
+      id:1,
+      nombre: 'Perecible',
+    },
+    {
+      id:2,
+      nombre: 'Armable'
+    },
+    {
+      id:3,
+      nombre: 'Frágil'
+    },
+    {
+      id:4,
+      nombre: 'Multiuso',
+    },
+    {
+      id:5,
+      nombre: 'Edición Limitada'
+    }
+  ];
+
 export { productos }
 export {categorias }
 export { paises }
+export {categorias_productos}
+export {atributos}
