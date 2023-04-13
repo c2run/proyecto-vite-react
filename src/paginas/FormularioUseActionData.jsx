@@ -12,11 +12,25 @@ export async function action({request}){
     //otra forma de recuperar los datos del formulario es con object
     const datos = Object.fromEntries(formData); 
 
+    //recibir checkbox dinámicos
+    let arreglo = [];
+    let mensajeArreglo="";
+    //recorrer los arreglos
+    //se crea indice -> i
+    atributos.map((atributo, i)=>{
+         //si existe el atributo y es diferente de null
+        if(formData.get("atributo_"+atributo.id)!=null)
+        {
+            arreglo[i] = atributo.id;
+            mensajeArreglo=mensajeArreglo + atributo.nombre + " , ";
+        }
+    });
+
     return Swal.fire({
         icon: 'success',
         title: 'OK',
         text: `El nombre es ${formData.get('nombre')} | Nombre: ${datos.nombre}  CAT: ${datos.categoria}  | Precio: ${formData.get('precio')}
-        | Destacado: ${datos.destacado} | Descripción: ${formData.get('descripcion')} | ${datos.peligroso} `
+        | Destacado: ${datos.destacado} | Descripción: ${formData.get('descripcion')} | ${datos.peligroso} | ${mensajeArreglo} `
     });
 }
 
@@ -90,6 +104,18 @@ const FormularioUseActionData = () => {
             <div className='form-check'>
                 <input type='checkbox' className='form-check-input' id='peligroso' name='peligroso' value={peligroso} onChange={manejarPeligroso} />
             </div>
+            </div>
+            <hr />
+            <div className='form-group'>
+                <label htmlFor='atributos'><strong>Atributos</strong></label>
+                {atributos.map((atributo) => (
+                    <div key={atributo.id} className='form-check' >
+                    
+                <input type='checkbox' value={atributo.id}  name={`atributo_${atributo.id}`} id={`atributo_${atributo.id}`} className='form-check-input' />
+                <label htmlFor=''>{atributo.nombre}</label>
+                </div>
+                ))}
+                
             </div>
             <hr />
         <button className='btn btn-warning'>Enviar</button>
