@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import Swal from 'sweetalert2'
 
 const FormularioSimple = () => {
 
@@ -11,8 +12,16 @@ const FormularioSimple = () => {
     const manejarSubmit = (e) => { //se le pasa la e de evento
         //esta primera línea e.preventDefault es para bloquear cualquier ejecución nativa del formulario html
         e.preventDefault(e);
-        console.log("el nombre es: "+nombre);
-        console.log("El apellido es: "+apellido);
+
+        //mostrar mensaje con sweet alert 2
+        Swal.fire({
+                icon: 'success',
+                title: 'OK',
+                text: 'El nombre es: '+ nombre +' '+ apellido,
+                //html: ''
+        });
+       // console.log("el nombre es: "+nombre);
+       // console.log("El apellido es: "+apellido);
     }
 
   return (
