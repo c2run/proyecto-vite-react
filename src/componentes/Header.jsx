@@ -35,7 +35,7 @@ const Header = () => {
               Básicos
             </Link>
 
-            <Link className="p-2 link-secondary" to="/" title='Formularios'>
+            <Link className="p-2 link-secondary" to="/formularios" title='Formularios'>
               Formularios
             </Link>
             <Link className="p-2 link-secondary" to="/rutas" title='Rutas'>

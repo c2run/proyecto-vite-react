@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from './paginas/Home';
 import SobreNosotros from "./paginas/SobreNosotros";
 import Error404 from "./paginas/Error404";
+import Formularios from "./paginas/Formularios";
 
 const Rutas = () => {
   return (

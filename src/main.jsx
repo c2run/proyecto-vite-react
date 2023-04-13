@@ -6,6 +6,7 @@ import './index.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './paginas/Home'
+
 import SobreNosotros from './paginas/SobreNosotros'
 import Error404 from './paginas/Error404'
 import Frontend from './componentes/Frontend'
@@ -25,6 +26,9 @@ import { paises } from './datos/datos';
 import HooksUseNavigate from './paginas/HooksUseNavigate';
 import HooksUseLocation from './paginas/HooksUseLocation';
 import HooksUseRef from './paginas/HooksUseRef';
+import Basicos from './paginas/Basicos';
+import Formularios from './paginas/Formularios';
+import FormularioSimple from './paginas/FormularioSimple';
 
 const router = createBrowserRouter
 (
@@ -43,6 +47,19 @@ const router = createBrowserRouter
           element: <SobreNosotros />
         },
         {
+          path: 'basicos',
+          element: <Basicos />
+        },
+        {
+          path: 'formularios',
+          element: <Formularios />
+        },
+        {
+          path: '/formulario-simple',
+          element: <FormularioSimple />
+        },
+        
+        {
           path: '/rutas',
           element: <Rutas />
         },
@@ -59,6 +76,7 @@ const router = createBrowserRouter
           path: '*',
           element: <Error404 />
         },
+        
         {
           path: '/hooks',
           element: <Hooks />
@@ -103,7 +121,9 @@ const router = createBrowserRouter
         {
           path: '/hooks/useRef',
           element: <HooksUseRef />
-        }
+        },
+        
+        
 
       ]
     }
