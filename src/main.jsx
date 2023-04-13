@@ -23,6 +23,8 @@ import HooksCustom from './paginas/HooksCustom';
 import HooksuseLoaderData, {loader as paisesLoader} from './paginas/HooksuseLoaderData';
 import { paises } from './datos/datos';
 import HooksUseNavigate from './paginas/HooksUseNavigate';
+import HooksUseLocation from './paginas/HooksUseLocation';
+import HooksUseRef from './paginas/HooksUseRef';
 
 const router = createBrowserRouter
 (
@@ -93,6 +95,14 @@ const router = createBrowserRouter
         {
           path: '/hooks/useNavigate',
           element: <HooksUseNavigate />
+        },
+        {
+          path: '/hooks/useLocation',
+          element: <HooksUseLocation />
+        },
+        {
+          path: '/hooks/useRef',
+          element: <HooksUseRef />
         }
 
       ]

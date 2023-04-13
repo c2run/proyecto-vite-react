@@ -29,6 +29,12 @@ const Hooks = () => {
             <li>
                 <Link to="/hooks/usenavigate">useNavigate</Link>
             </li>
+            <li>
+                <Link to="/hooks/uselocation">useLocation</Link>
+            </li>
+            <li>
+                <Link to="/hooks/useref">useRef</Link>
+            </li>
         </ul>
     </>
   )
