@@ -11,11 +11,37 @@ const FormulariosFormik = () => {
         },
         onSubmit: async function(values)
         {
-            Swal.fire({
-                icon: 'success',
-                title: 'OK',
-                text: `E-mail:${values.correo} | Contraseña:${values.password}`
-            });
+            let mensaje = '';
+            if(!values.correo){
+                mensaje = mensaje+"<li>El campo E-mail es obligatorio</li>";
+            }
+
+            if(!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.correo)){
+                mensaje = mensaje + "<li>El E-mail ingresado no es válido<li>";
+            }
+
+            if(!/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{6,20}$/i.test(values.password)){
+                mensaje = mensaje + "<li> La contraseña debe tener al menos 1 número, una mayúscula, y un largo entre 6 y 20 caracteres.</li>";
+            }
+
+            if(!values.password){
+                mensaje = mensaje+"<li>El campo Password es obligatorio</li>";
+            }
+            if(mensaje!=''){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Ups',
+                    html: `<ul>${mensaje}</ul>` 
+                });
+                return;
+            }else{
+                Swal.fire({
+                    icon: 'success',
+                    title: 'OK',
+                    text: `E-mail:${values.correo} | Contraseña:${values.password}`
+                });
+            }
+           
         }
     });
 
