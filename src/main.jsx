@@ -31,6 +31,7 @@ import Formularios from './paginas/Formularios';
 import FormularioSimple from './paginas/FormularioSimple';
 import FormularioUseActionData , {action as procesarFormularioActionDate} from './paginas/FormularioUseActionData';
 import FormulariosFormik from './paginas/FormulariosFormik';
+import FormulariosReactHookForm from './paginas/FormulariosReactHookForm';
 
 const router = createBrowserRouter
 (
@@ -59,6 +60,10 @@ const router = createBrowserRouter
         {
           path: '/formulario-simple',
           element: <FormularioSimple />
+        },
+        {
+          path: '/formulario/hookform',
+          element: <FormulariosReactHookForm />
         },
         {
           path: '/formulario/useactiondata',
