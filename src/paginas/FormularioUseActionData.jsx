@@ -65,6 +65,22 @@ const FormularioUseActionData = () => {
 
     const errores = useActionData();
     
+    //ejemplo validación asíncrona.
+    const [name, setName] = useState('');
+    //crear una función asíncrona
+    async function manejarBlur(name){
+        if(name=='Jose Cerda')
+        {
+            Swal.fire({
+                icon: 'error',
+                title: 'Ops',
+                text: "El nombre ingresado no está disponible"
+            });
+            //se setea el nombre a vacío
+            setName('');
+        }
+    }
+    
   return (
    <>
     <nav aria-label="breadcrumb">
@@ -93,7 +109,16 @@ const FormularioUseActionData = () => {
 
        
         <label htmlFor='nombre'>Nombre</label>
-        <input type='text' id='nombre' className='form-control' name='nombre' placeholder='Nombre' />
+        <input 
+        type='text' 
+        id='nombre' 
+        className='form-control' 
+        name='nombre' 
+        placeholder='Nombre' 
+        value={name} 
+        onChange={(e)=>{setName(e.target.value)}}
+        onBlur={(e)=>{manejarBlur(e.target.value)}}  
+        />
         </div>
         
         <div className='form-group'>
