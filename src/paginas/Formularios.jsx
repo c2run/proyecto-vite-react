@@ -13,6 +13,9 @@ const Formularios = () => {
             <li>
                 <Link to='/formulario/useactiondata'>Formulario useActionData</Link>
             </li>
+            <li>
+                <Link to='/formulario/formik'>Formulario Formik</Link>
+            </li>
         </ul>
 
     </div>

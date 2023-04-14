@@ -30,6 +30,7 @@ import Basicos from './paginas/Basicos';
 import Formularios from './paginas/Formularios';
 import FormularioSimple from './paginas/FormularioSimple';
 import FormularioUseActionData , {action as procesarFormularioActionDate} from './paginas/FormularioUseActionData';
+import FormulariosFormik from './paginas/FormulariosFormik';
 
 const router = createBrowserRouter
 (
@@ -63,6 +64,10 @@ const router = createBrowserRouter
           path: '/formulario/useactiondata',
           element: <FormularioUseActionData />,
           action: procesarFormularioActionDate
+        },
+        {
+          path: '/formulario/formik',
+          element: <FormulariosFormik />
         },
         
         {
