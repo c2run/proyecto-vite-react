@@ -19,6 +19,9 @@ const Formularios = () => {
             <li>
                 <Link to='/formulario/hookform'>React Hook Form</Link>
             </li>
+            <li>
+                <Link to='/formulario/reactfinalform'>React Final Form</Link>
+            </li>
         </ul>
 
     </div>

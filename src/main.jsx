@@ -32,7 +32,7 @@ import FormularioSimple from './paginas/FormularioSimple';
 import FormularioUseActionData , {action as procesarFormularioActionDate} from './paginas/FormularioUseActionData';
 import FormulariosFormik from './paginas/FormulariosFormik';
 import FormulariosReactHookForm from './paginas/FormulariosReactHookForm';
-
+import FormulariosReactFinalForm from './paginas/FormulariosReactFinalForm';
 const router = createBrowserRouter
 (
   [
@@ -73,6 +73,10 @@ const router = createBrowserRouter
         {
           path: '/formulario/formik',
           element: <FormulariosFormik />
+        },
+        {
+          path: '/formulario/reactfinalform',
+          element: <FormulariosReactFinalForm />
         },
         
         {
