@@ -1,16 +1,35 @@
 import React from 'react'
-import { Link, Form } from 'react-router-dom'
+import { Link, Form, useActionData } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import { atributos, categorias_productos } from '../datos/datos';
 import { useState } from 'react';
+import Validaciones from '../componentes/Validaciones';
 
-export async function action({request}){
+    export async function action({request}){
     //se reciben los datos del formulario
     //siempre los action deben retornar algo. sino la app se rompe.
     const formData = await request.formData();
     
     //otra forma de recuperar los datos del formulario es con object
     const datos = Object.fromEntries(formData); 
+
+    
+    let errores = [];
+    if(formData.get('categoria'==='0')){
+        errores.push('Debe seleccionar al menos una categoría');
+    }
+    if(Object.values(datos).includes('')){
+        errores.push('Todos los campos son obligatorios');
+    }
+    let expresion_precio = new RegExp("[0-9]");
+
+    if(!expresion_precio.test(formData.get('precio')))
+    {
+        errores.push("El precio solo puede tener números");
+    }
+    if(Object.keys(errores).length){
+        return errores;
+    }
 
     //recibir checkbox dinámicos
     let arreglo = [];
@@ -30,7 +49,7 @@ export async function action({request}){
         icon: 'success',
         title: 'OK',
         text: `El nombre es ${formData.get('nombre')} | Nombre: ${datos.nombre}  CAT: ${datos.categoria}  | Precio: ${formData.get('precio')}
-        | Destacado: ${datos.destacado} | Descripción: ${formData.get('descripcion')} | ${datos.peligroso} | ${mensajeArreglo} `
+        | Destacado: ${datos.destacado} | Descripción: ${formData.get('descripcion')} | ${datos.peligroso} | atributos: ${mensajeArreglo},`
     });
 }
 
@@ -44,6 +63,8 @@ const FormularioUseActionData = () => {
         setPeligroso(!peligroso);
     }
 
+    const errores = useActionData();
+    
   return (
    <>
     <nav aria-label="breadcrumb">
@@ -58,8 +79,8 @@ const FormularioUseActionData = () => {
       </nav>
       <hr />
       <h3>Formulario use Action Data</h3>
-
-      <Form method='post'>
+        { errores?.length && <Validaciones errores={errores} /> }
+      <Form method='post' noValidate>
         <div className='form-group'>
         <label htmlFor='categoria' id='categoria'>Categoría</label>
         <select name='categoria' id='categoria' className='form-control'>
