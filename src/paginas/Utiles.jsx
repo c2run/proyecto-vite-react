@@ -11,6 +11,9 @@ const Utiles = () => {
         <li>
         <Link to='/utiles/daysjs'>Daysjs</Link>
         </li>
+        <li>
+        <Link to='/utiles/moment'>Moment</Link>
+        </li>
     </ul>
     </>
   )
