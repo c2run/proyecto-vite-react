@@ -36,6 +36,7 @@ import FormulariosReactFinalForm from './paginas/FormulariosReactFinalForm';
 import Utiles from './paginas/Utiles';
 import UtilesDayjs from './paginas/UtilesDayjs';
 import UtilesMoment from './paginas/UtilesMoment';
+import UtilesSpinner from './paginas/UtilesSpinner';
 
 const router = createBrowserRouter
 (
@@ -93,6 +94,10 @@ const router = createBrowserRouter
         {
           path: 'utiles/moment',
           element: <UtilesMoment />
+        },
+        {
+          path: 'utiles/spinner',
+          element: <UtilesSpinner />
         },
         {
           path: '/rutas',
