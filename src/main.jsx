@@ -33,6 +33,9 @@ import FormularioUseActionData , {action as procesarFormularioActionDate} from '
 import FormulariosFormik from './paginas/FormulariosFormik';
 import FormulariosReactHookForm from './paginas/FormulariosReactHookForm';
 import FormulariosReactFinalForm from './paginas/FormulariosReactFinalForm';
+import Utiles from './paginas/Utiles';
+import UtilesDayjs from './paginas/UtilesDayjs';
+
 const router = createBrowserRouter
 (
   [
@@ -78,7 +81,14 @@ const router = createBrowserRouter
           path: '/formulario/reactfinalform',
           element: <FormulariosReactFinalForm />
         },
-        
+        {
+          path: '/utiles',
+          element: <Utiles />
+        },
+        {
+          path: 'utiles/daysjs',
+          element: <UtilesDayjs />
+        },
         {
           path: '/rutas',
           element: <Rutas />
