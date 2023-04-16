@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 
-
 const Utiles = () => {
 
   return (
@@ -16,6 +15,9 @@ const Utiles = () => {
         </li>
         <li>
         <Link to='/utiles/spinner'>Spinner</Link>
+        </li>
+        <li>
+        <Link to='/utiles/swipeable'>react-swipeable-list</Link>
         </li>
     </ul>
     </>

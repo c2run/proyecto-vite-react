@@ -37,6 +37,7 @@ import Utiles from './paginas/Utiles';
 import UtilesDayjs from './paginas/UtilesDayjs';
 import UtilesMoment from './paginas/UtilesMoment';
 import UtilesSpinner from './paginas/UtilesSpinner';
+import UtilesSwipeable from './paginas/UtilesSwipeable';
 
 const router = createBrowserRouter
 (
@@ -98,6 +99,10 @@ const router = createBrowserRouter
         {
           path: 'utiles/spinner',
           element: <UtilesSpinner />
+        },
+        {
+          path: 'utiles/swipeable',
+          element: <UtilesSwipeable />
         },
         {
           path: '/rutas',
