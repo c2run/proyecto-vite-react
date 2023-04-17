@@ -42,7 +42,7 @@ import UtilesWebcam from './paginas/UtilesWebcam';
 import UtilesGraficos from './paginas/UtilesGraficos';
 import UtilesMapas1 from './paginas/UtilesMapas1';
 import UtilesMapas2 from './paginas/UtilesMapas2';
-
+import UtilesModal from './paginas/UtilesModal';
 const router = createBrowserRouter
 (
   [
@@ -123,6 +123,10 @@ const router = createBrowserRouter
         {
           path: 'utiles/mapas2',
           element: <UtilesMapas2 />
+        },
+        {
+          path: 'utiles/modal',
+          element: <UtilesModal />
         },
         {
           path: '/rutas',
