@@ -35,6 +35,9 @@ const Utiles = () => {
         <li>
         <Link to='/utiles/modal'>Modal</Link>
         </li>
+        <li>
+        <Link to='/utiles/carrusel'>Carrusel</Link>
+        </li>
     </ul>
     </>
   )

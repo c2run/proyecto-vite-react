@@ -43,6 +43,7 @@ import UtilesGraficos from './paginas/UtilesGraficos';
 import UtilesMapas1 from './paginas/UtilesMapas1';
 import UtilesMapas2 from './paginas/UtilesMapas2';
 import UtilesModal from './paginas/UtilesModal';
+import UtilesCarrusel from './paginas/UtilesCarrusel';
 const router = createBrowserRouter
 (
   [
@@ -127,6 +128,10 @@ const router = createBrowserRouter
         {
           path: 'utiles/modal',
           element: <UtilesModal />
+        },
+        {
+          path: 'utiles/carrusel',
+          element: <UtilesCarrusel />
         },
         {
           path: '/rutas',
