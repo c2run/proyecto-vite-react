@@ -38,6 +38,7 @@ import UtilesDayjs from './paginas/UtilesDayjs';
 import UtilesMoment from './paginas/UtilesMoment';
 import UtilesSpinner from './paginas/UtilesSpinner';
 import UtilesSwipeable from './paginas/UtilesSwipeable';
+import UtilesWebcam from './paginas/UtilesWebcam';
 
 const router = createBrowserRouter
 (
@@ -103,6 +104,10 @@ const router = createBrowserRouter
         {
           path: 'utiles/swipeable',
           element: <UtilesSwipeable />
+        },
+        {
+          path: 'utiles/webcam',
+          element: <UtilesWebcam />
         },
         {
           path: '/rutas',
