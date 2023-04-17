@@ -26,6 +26,12 @@ const Utiles = () => {
         <li>
         <Link to='/utiles/graficos'>Utiles Gráficos</Link>
         </li>
+        <li>
+        <Link to='/utiles/mapas1'>Mapas clásicos</Link>
+        </li>
+        <li>
+        <Link to='/utiles/mapas2'>Mapbox</Link>
+        </li>
     </ul>
     </>
   )
