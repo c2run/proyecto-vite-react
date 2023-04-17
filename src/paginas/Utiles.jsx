@@ -23,6 +23,9 @@ const Utiles = () => {
         <li>
         <Link to='/utiles/webcam'>react-webcam</Link>
         </li>
+        <li>
+        <Link to='/utiles/graficos'>Utiles Gráficos</Link>
+        </li>
     </ul>
     </>
   )

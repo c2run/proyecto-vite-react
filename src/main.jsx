@@ -39,6 +39,7 @@ import UtilesMoment from './paginas/UtilesMoment';
 import UtilesSpinner from './paginas/UtilesSpinner';
 import UtilesSwipeable from './paginas/UtilesSwipeable';
 import UtilesWebcam from './paginas/UtilesWebcam';
+import UtilesGraficos from './paginas/UtilesGraficos';
 
 const router = createBrowserRouter
 (
@@ -108,6 +109,10 @@ const router = createBrowserRouter
         {
           path: 'utiles/webcam',
           element: <UtilesWebcam />
+        },
+        {
+          path: 'utiles/graficos',
+          element: <UtilesGraficos />
         },
         {
           path: '/rutas',
