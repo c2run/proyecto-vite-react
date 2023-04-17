@@ -53,6 +53,11 @@ const Header = () => {
             <Link className="p-2 link-secondary" to="/utiles" title='Styled Component'>
              Utiles
             </Link>
+            
+            <Link className="p-2 link-secondary" to="/material" title='Styled Component'>
+             Material
+            </Link>
+           
           </nav>
         </div>
         </div>

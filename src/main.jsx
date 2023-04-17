@@ -44,6 +44,9 @@ import UtilesMapas1 from './paginas/UtilesMapas1';
 import UtilesMapas2 from './paginas/UtilesMapas2';
 import UtilesModal from './paginas/UtilesModal';
 import UtilesCarrusel from './paginas/UtilesCarrusel';
+import Material from './paginas/Material';
+import MaterialBotones from './paginas/MaterialBotones';
+
 const router = createBrowserRouter
 (
   [
@@ -88,6 +91,14 @@ const router = createBrowserRouter
         {
           path: '/formulario/reactfinalform',
           element: <FormulariosReactFinalForm />
+        },
+        {
+          path: '/material',
+          element: <Material />
+        },
+        {
+          path: '/material/botones',
+          element: <MaterialBotones />
         },
         {
           path: '/utiles',
