@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 
 const Material = () => {
+  
   return (
     <>
     
@@ -9,6 +10,11 @@ const Material = () => {
          <ul>
             <li>
                 <Link to="/material/botones">Botones-Iconos-Stack</Link>
+            </li>
+         </ul>
+         <ul>
+            <li>
+                <Link to="/material/list">List</Link>
             </li>
          </ul>
        
