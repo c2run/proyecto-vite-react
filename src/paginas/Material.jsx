@@ -39,6 +39,9 @@ const Material = () => {
             <li>
                 <Link to="/material/card">Card</Link>
             </li>
+            <li>
+                <Link to="/material/autocomplete">Autocomplete</Link>
+            </li>
          </ul>
        
     
