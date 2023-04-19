@@ -7,21 +7,7 @@ import InboxIcon from '@mui/icons-material/Inbox';
 import { ExpandLess } from "@mui/icons-material";
 import { ExpandMore } from "@mui/icons-material";
 import { StarBorder } from "@mui/icons-material";
-/*
-import { ListSubheader } from "@mui/material";
-import List from "@mui/material";
-import ListItemButton from "@mui/material";
-import ListItemIcon from "@mui/material";
-import ListItemText from "@mui/material";
-import Collapse from "@mui/material";
-import InboxIcon from '@mui/icons-material/Inbox';
-import DraftsIcon from '@mui/icons-material/Drafts';
-import SendIcon from '@mui/icons-material/Send';
-import { Drafts } from "@mui/icons-material";
-import { ExpandLess } from "@mui/icons-material";
-import { ExpandMore } from "@mui/icons-material";
-import { StarBorder } from "@mui/icons-material";
-*/
+
 
 const MaterialList = () => {
   const [open, setOpen] = useState();

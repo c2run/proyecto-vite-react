@@ -47,6 +47,8 @@ import UtilesCarrusel from './paginas/UtilesCarrusel';
 import Material from './paginas/Material';
 import MaterialBotones from './paginas/MaterialBotones';
 import MaterialList from './paginas/MaterialList';
+import MaterialDrawer from './paginas/MaterialDrawer';
+import MaterialTable from './paginas/MaterialTable';
 
 const router = createBrowserRouter
 (
@@ -104,6 +106,14 @@ const router = createBrowserRouter
         {
           path: '/material/list',
           element: <MaterialList />
+        },
+        {
+          path: '/material/drawer',
+          element: <MaterialDrawer />
+        },
+        {
+          path: '/material/tablas',
+          element: <MaterialTable />
         },
         {
           path: '/utiles',
