@@ -52,6 +52,7 @@ import MaterialTable from './paginas/MaterialTable';
 import MaterialAccordion from './paginas/MaterialAccordion';
 import MaterialStepper from './paginas/MaterialStepper';
 import MaterialTab from './paginas/MaterialTab';
+import MaterialDialog from './paginas/MaterialDialog';
 
 const router = createBrowserRouter
 (
@@ -129,6 +130,10 @@ const router = createBrowserRouter
         {
           path: '/material/tabs',
           element: <MaterialTab />
+        },
+        {
+          path: '/material/dialog',
+          element: <MaterialDialog />
         },
         {
           path: '/utiles',

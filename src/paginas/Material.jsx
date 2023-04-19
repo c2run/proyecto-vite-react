@@ -33,6 +33,9 @@ const Material = () => {
             <li>
                 <Link to="/material/tabs">Tabs</Link>
             </li>
+            <li>
+                <Link to="/material/dialog">Dialog</Link>
+            </li>
          </ul>
        
     
