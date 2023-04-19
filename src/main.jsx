@@ -51,6 +51,7 @@ import MaterialDrawer from './paginas/MaterialDrawer';
 import MaterialTable from './paginas/MaterialTable';
 import MaterialAccordion from './paginas/MaterialAccordion';
 import MaterialStepper from './paginas/MaterialStepper';
+import MaterialTab from './paginas/MaterialTab';
 
 const router = createBrowserRouter
 (
@@ -124,6 +125,10 @@ const router = createBrowserRouter
         {
           path: '/material/stepper',
           element: <MaterialStepper />
+        },
+        {
+          path: '/material/tabs',
+          element: <MaterialTab />
         },
         {
           path: '/utiles',
