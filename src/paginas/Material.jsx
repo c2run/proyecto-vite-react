@@ -27,6 +27,9 @@ const Material = () => {
             <li>
                 <Link to="/material/accordion">Accordion</Link>
             </li>
+            <li>
+                <Link to="/material/stepper">Stepper</Link>
+            </li>
          </ul>
        
     

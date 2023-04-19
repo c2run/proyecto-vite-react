@@ -50,6 +50,7 @@ import MaterialList from './paginas/MaterialList';
 import MaterialDrawer from './paginas/MaterialDrawer';
 import MaterialTable from './paginas/MaterialTable';
 import MaterialAccordion from './paginas/MaterialAccordion';
+import MaterialStepper from './paginas/MaterialStepper';
 
 const router = createBrowserRouter
 (
@@ -119,6 +120,10 @@ const router = createBrowserRouter
         {
           path: '/material/accordion',
           element: <MaterialAccordion />
+        },
+        {
+          path: '/material/stepper',
+          element: <MaterialStepper />
         },
         {
           path: '/utiles',
