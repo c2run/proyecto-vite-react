@@ -53,6 +53,7 @@ import MaterialAccordion from './paginas/MaterialAccordion';
 import MaterialStepper from './paginas/MaterialStepper';
 import MaterialTab from './paginas/MaterialTab';
 import MaterialDialog from './paginas/MaterialDialog';
+import MaterialCard from './paginas/MaterialCard';
 
 const router = createBrowserRouter
 (
@@ -134,6 +135,10 @@ const router = createBrowserRouter
         {
           path: '/material/dialog',
           element: <MaterialDialog />
+        },
+        {
+          path: '/material/card',
+          element: <MaterialCard />
         },
         {
           path: '/utiles',
