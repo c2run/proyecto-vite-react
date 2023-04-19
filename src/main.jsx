@@ -49,6 +49,7 @@ import MaterialBotones from './paginas/MaterialBotones';
 import MaterialList from './paginas/MaterialList';
 import MaterialDrawer from './paginas/MaterialDrawer';
 import MaterialTable from './paginas/MaterialTable';
+import MaterialAccordion from './paginas/MaterialAccordion';
 
 const router = createBrowserRouter
 (
@@ -114,6 +115,10 @@ const router = createBrowserRouter
         {
           path: '/material/tablas',
           element: <MaterialTable />
+        },
+        {
+          path: '/material/accordion',
+          element: <MaterialAccordion />
         },
         {
           path: '/utiles',

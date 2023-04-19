@@ -24,6 +24,9 @@ const Material = () => {
             <li>
                 <Link to="/material/tablas">Tabla o Datagrid</Link>
             </li>
+            <li>
+                <Link to="/material/accordion">Accordion</Link>
+            </li>
          </ul>
        
     
