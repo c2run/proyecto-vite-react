@@ -42,6 +42,9 @@ const Material = () => {
             <li>
                 <Link to="/material/autocomplete">Autocomplete</Link>
             </li>
+            <li>
+                <Link to="/material/datepicker">Date Picker</Link>
+            </li>
          </ul>
        
     

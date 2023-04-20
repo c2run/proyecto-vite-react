@@ -10,6 +10,7 @@ const MaterialAutocomplete = () => {
     const [dato, setDato] = useState();
     const handleCampo = (e) => {
         e.preventDefault();
+        setDato(e);
         alert(dato);
     }
 
