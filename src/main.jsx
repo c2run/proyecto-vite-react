@@ -56,6 +56,9 @@ import MaterialDialog from './paginas/MaterialDialog';
 import MaterialCard from './paginas/MaterialCard';
 import MaterialAutocomplete from './paginas/MaterialAutocomplete';
 import MaterialDatePicker from './componentes/MaterialDatePicker';
+import AlmacenamientoLocal from './paginas/AlmacenamientoLocal';
+import AlmacenamientoLocalStorage from './paginas/AlmacenamientoLocalStorage';
+import AlmacenamientoLocalSesionStorage from './paginas/AlmacenamientoLocalSesionStorage';
 
 const router = createBrowserRouter
 (
@@ -101,6 +104,18 @@ const router = createBrowserRouter
         {
           path: '/formulario/reactfinalform',
           element: <FormulariosReactFinalForm />
+        },
+        {
+          path: '/almacenamiento-local',
+          element: <AlmacenamientoLocal />
+        },
+        {
+          path: '/almacenamiento-local-localstorage',
+          element: <AlmacenamientoLocalStorage />
+        },
+        {
+          path: '/almacenamiento-local-sesionstorage',
+          element: <AlmacenamientoLocalSesionStorage />
         },
         {
           path: '/material',
