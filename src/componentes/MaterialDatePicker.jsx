@@ -60,7 +60,8 @@ const MaterialDatePicker = () => {
           </DemoItem>
     </LocalizationProvider>
     <hr />
-    <Button type="submit">Botón</Button>
+    <Button type="submit" variant="contained" >Botón</Button>
+    <hr />
     </form>
     </>
   )
