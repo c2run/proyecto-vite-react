@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
+import {store} from './redux/store/store';
+import { Provider } from 'react-redux';
+
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -60,6 +64,7 @@ import AlmacenamientoLocal from './paginas/AlmacenamientoLocal';
 import AlmacenamientoLocalStorage from './paginas/AlmacenamientoLocalStorage';
 import AlmacenamientoLocalSesionStorage from './paginas/AlmacenamientoLocalSesionStorage';
 import ContextEjemplo from './paginas/ContextEjemplo';
+import ReduxEjemplo from './paginas/ReduxEjemplo';
 
 const router = createBrowserRouter
 (
@@ -109,6 +114,10 @@ const router = createBrowserRouter
         {
           path: '/context',
           element: <ContextEjemplo />
+        },
+        {
+          path: '/redux',
+          element: <ReduxEjemplo />
         },
         {
           path: '/almacenamiento-local',
@@ -287,6 +296,8 @@ const router = createBrowserRouter
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Provider store={store}>
     <RouterProvider router={router}></RouterProvider>
+    </Provider>
   </React.StrictMode>,
 )
