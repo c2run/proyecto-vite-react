@@ -59,6 +59,7 @@ import MaterialDatePicker from './componentes/MaterialDatePicker';
 import AlmacenamientoLocal from './paginas/AlmacenamientoLocal';
 import AlmacenamientoLocalStorage from './paginas/AlmacenamientoLocalStorage';
 import AlmacenamientoLocalSesionStorage from './paginas/AlmacenamientoLocalSesionStorage';
+import ContextEjemplo from './paginas/ContextEjemplo';
 
 const router = createBrowserRouter
 (
@@ -104,6 +105,10 @@ const router = createBrowserRouter
         {
           path: '/formulario/reactfinalform',
           element: <FormulariosReactFinalForm />
+        },
+        {
+          path: '/context',
+          element: <ContextEjemplo />
         },
         {
           path: '/almacenamiento-local',

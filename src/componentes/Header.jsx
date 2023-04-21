@@ -61,6 +61,10 @@ const Header = () => {
             <Link className="p-2 link-secondary" to="/almacenamiento-local" title='Almacenamiento Local'>
              AlmacenamientoLocal
             </Link>
+
+            <Link className="p-2 link-secondary" to="/context" title='Almacenamiento Local'>
+             Context
+            </Link>
           </nav>
         </div>
         </div>
