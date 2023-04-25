@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux"
 import {} from './../redux/features/procedenciaSlice'
 import { cambiarMexico,cambiarPeru,cambiarVenezuela, volverChile } from "./../redux/features/procedenciaSlice"
 import calculadoraSlice, {sumar, restar,multiplicar,dividir, resetear} from './../redux/features/calculadoraSlice'
+import { iniciarSesion } from "../redux/features/parametrosSlice"
 
 const ReduxEjemplo = () => {
     // const pais = useSelector((state) => state.procedencia.pais);
@@ -10,6 +11,8 @@ const ReduxEjemplo = () => {
     const procedencia = useSelector((state) => state.procedencia);
     
     const calculadora = useSelector((state) => state.calculadora);
+
+    const parametros = useSelector((state, datos) => state.parametros )
 
 
     const dispatch = useDispatch();
@@ -46,6 +49,12 @@ const ReduxEjemplo = () => {
         <button className="btn btn-primary" onClick={()=> dispatch(dividir())}>dividir</button>
         <hr />
         <button className="btn btn-primary" onClick={()=> dispatch(resetear())}>resetear</button>
+        <h1>Ejemplo Redux 3 iniciar sesión</h1>
+          <li>Nombre: {parametros.nombre}</li>
+          <li>Perfil ID: {parametros.perfil_id}</li>
+          <li>Perfil: {parametros.perfil}</li>
+          <hr />
+          <button className="btn btn-primary" onClick={()=> {dispatch(iniciarSesion({nombre: "José Cerda", perfil_id:1,perfil:"Administrador"}))}}>Iniciar Sesión</button>
     </>
   )
 }
