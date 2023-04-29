@@ -65,6 +65,8 @@ import AlmacenamientoLocalStorage from './paginas/AlmacenamientoLocalStorage';
 import AlmacenamientoLocalSesionStorage from './paginas/AlmacenamientoLocalSesionStorage';
 import ContextEjemplo from './paginas/ContextEjemplo';
 import ReduxEjemplo from './paginas/ReduxEjemplo';
+import FetchComponent from './paginas/FetchComponent';
+import FetchCategorias from './paginas/FetchCategorias';
 
 const router = createBrowserRouter
 (
@@ -77,6 +79,14 @@ const router = createBrowserRouter
         {
           index: true,
           element: <Home />
+        },
+        {
+          path: 'fetch',
+          element: <FetchComponent />
+        },
+        {
+          path: 'fetch/categorias',
+          element: <FetchCategorias />
         },
         {
           path: 'sobre-nosotros',

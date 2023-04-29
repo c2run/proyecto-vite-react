@@ -69,6 +69,10 @@ const Header = () => {
             <Link className="p-2 link-secondary" to="/redux" title='Almacenamiento Local'>
              Redux
             </Link>
+
+            <Link className="p-2 link-secondary" to="/fetch" title='fetch'>
+             Fetch
+            </Link>
           </nav>
         </div>
         </div>
