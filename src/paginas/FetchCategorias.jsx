@@ -26,7 +26,7 @@ const FetchCategorias = () => {
         <h1>Fetch</h1>
         <hr />
         { character.map((character)=> 
-        <div>
+        <div key={character.id}>
         <h3>{character.name}</h3>
         <img src={character.image} />
         <p>{character.species}</p>

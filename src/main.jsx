@@ -67,7 +67,7 @@ import ContextEjemplo from './paginas/ContextEjemplo';
 import ReduxEjemplo from './paginas/ReduxEjemplo';
 import FetchComponent from './paginas/FetchComponent';
 import FetchCategorias from './paginas/FetchCategorias';
-
+import FetchApiWeather from './paginas/FetchApiWeather';
 const router = createBrowserRouter
 (
   [
@@ -85,8 +85,8 @@ const router = createBrowserRouter
           element: <FetchComponent />
         },
         {
-          path: 'fetch/categorias',
-          element: <FetchCategorias />
+          path: 'fetch/fetchapiweather',
+          element: <FetchApiWeather />
         },
         {
           path: 'sobre-nosotros',

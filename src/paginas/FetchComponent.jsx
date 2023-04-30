@@ -10,7 +10,7 @@ const FetchComponents = () => {
             <Link to="/fetch/categorias">Categorías</Link>
         </li>
         <li>
-            <Link to="/fetch/productos/1">Productos</Link>
+            <Link to="/fetch/fetchapiweather">Clima</Link>
         </li>
     </ul>
    </>
