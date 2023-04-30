@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState,useEffect } from "react";
 import { CircularProgress, Slide, TextField } from "@mui/material";
+import '../../public/css/weather.css';
 
 
 
@@ -41,14 +42,11 @@ useEffect(() => {
 
   return (
     
-    <div className="bg_img">
+    <div className="bg_image">
        <h1>Clima</h1>
         <hr />
         {!loading ? (  
             <>
-         
-    
-
         <TextField
         size="lg"
         placeholder="Ciudad..."
@@ -64,8 +62,8 @@ useEffect(() => {
         <div className="group">
         <h1>Despejado</h1>
         </div>
-        <h1 className="temp">{data.main.temp.toFixed()}°</h1>
-
+        <h1 className="temp">{data.main.temp.toFixed()}° C</h1>
+            
             <Slide direction="right" timeout={800} in={!loading}>
             <div className="box_container">
             <div className="box">
@@ -85,7 +83,7 @@ useEffect(() => {
 
             </div>
             </Slide>
-
+           
             </>
             ) : (
                 <CircularProgress />
