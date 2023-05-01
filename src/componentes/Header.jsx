@@ -73,6 +73,22 @@ const Header = () => {
             <Link className="p-2 link-secondary" to="/fetch" title='fetch'>
              Fetch
             </Link>
+
+            <Link className="p-2 link-secondary" to="/acceso/login" title='login'>
+             Login
+            </Link>
+
+            <Link className="p-2 link-secondary" to="/acceso/registro" title='registro'>
+             Registro
+            </Link>
+
+            <Link className="p-2 link-secondary" to="/acceso/protegido" title='protegido'>
+             Protegido
+            </Link>
+
+            <Link className="p-2 link-secondary" to="/acceso/protegido2" title='protegido2'>
+             Protegido2
+            </Link>
           </nav>
         </div>
         </div>
