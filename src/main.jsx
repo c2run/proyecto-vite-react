@@ -68,17 +68,46 @@ import ReduxEjemplo from './paginas/ReduxEjemplo';
 import FetchComponent from './paginas/FetchComponent';
 import FetchCategorias from './paginas/FetchCategorias';
 import FetchApiWeather from './paginas/FetchApiWeather';
+
+import AccesoRegistro from './paginas/AccesoRegistro';
+import AccesoLogin from './paginas/AccesoLogin';
+import AccesoProtegido from './paginas/AccesoProtegido';
+import AccesoProtegido2 from './paginas/AccesoProtegido2';
+
+
 const router = createBrowserRouter
 (
   [
     {
       path:'/',
       element: <Frontend />,
-      children:
+      children: 
       [
         {
           index: true,
           element: <Home />
+        },
+       
+        {
+          path: '/acceso/registro',
+          element: <AccesoRegistro />,
+          //action: registroAction,
+         // errorElement: <ErrorPersonalizado />
+        },
+        {
+          path: '/acceso/login',
+          element: <AccesoLogin />,
+          errorElement: <ErrorPersonalizado />
+        },
+        {
+          path: '/acceso/protegido',
+          element: <AccesoProtegido />,
+          errorElement: <ErrorPersonalizado />
+        },
+        {
+          path: '/acceso/protegido2',
+          element: <AccesoProtegido2 />,
+          errorElement: <ErrorPersonalizado />
         },
         {
           path: 'fetch',
