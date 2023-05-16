@@ -69,12 +69,19 @@ import FetchComponent from './paginas/FetchComponent';
 import FetchCategorias from './paginas/FetchCategorias';
 import FetchApiWeather from './paginas/FetchApiWeather';
 
+<<<<<<< HEAD
 import AccesoRegistro from './paginas/AccesoRegistro';
+=======
+import AccesoRegistro, {action as registroAction} from './paginas/AccesoRegistro';
+>>>>>>> 82c70cee0e244653e76ff248abbd1939b1b7aaff
 import AccesoLogin from './paginas/AccesoLogin';
 import AccesoProtegido from './paginas/AccesoProtegido';
 import AccesoProtegido2 from './paginas/AccesoProtegido2';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 82c70cee0e244653e76ff248abbd1939b1b7aaff
 const router = createBrowserRouter
 (
   [
@@ -93,6 +100,27 @@ const router = createBrowserRouter
           element: <AccesoRegistro />,
           //action: registroAction,
          // errorElement: <ErrorPersonalizado />
+        },
+        {
+          path: '/acceso/login',
+          element: <AccesoLogin />,
+          errorElement: <ErrorPersonalizado />
+        },
+        {
+          path: '/acceso/protegido',
+          element: <AccesoProtegido />,
+          errorElement: <ErrorPersonalizado />
+        },
+        {
+          path: '/acceso/protegido2',
+          element: <AccesoProtegido2 />,
+          errorElement: <ErrorPersonalizado />
+        },
+        {
+          path: '/acceso/registro',
+          element: <AccesoRegistro />,
+          action: registroAction,
+          errorElement: <ErrorPersonalizado />
         },
         {
           path: '/acceso/login',

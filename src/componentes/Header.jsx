@@ -89,6 +89,7 @@ const Header = () => {
             <Link className="p-2 link-secondary" to="/acceso/protegido2" title='protegido2'>
              Protegido2
             </Link>
+<<<<<<< HEAD
           
 
           <Link className="p-2 link-secondary" to="/pasarelas" title='pasarelas'>
@@ -97,6 +98,9 @@ const Header = () => {
 
             
             </nav>
+=======
+          </nav>
+>>>>>>> 82c70cee0e244653e76ff248abbd1939b1b7aaff
         </div>
         </div>
     </>

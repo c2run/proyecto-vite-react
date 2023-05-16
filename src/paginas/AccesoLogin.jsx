@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Button } from "bootstrap"
 import { Link, redirect } from "react-router-dom"
 import { useState } from "react"
@@ -55,6 +56,14 @@ const AccesoLogin = () => {
           <hr />
           <button className="btn btn-primary" type="submit" >Enviar</button>
         </form>
+=======
+import { Link } from "react-router-dom"
+
+const AccesoLogin = () => {
+  return (
+    <>
+        <h1>Acceso Login</h1>
+>>>>>>> 82c70cee0e244653e76ff248abbd1939b1b7aaff
     </>
   )
 }
